@@ -9,7 +9,7 @@ class Application < Sinatra::Base
   end
 
 get '/process' do
-  puts "get method --Asked to process credit card transaction:"
+  "please use url /process to process credit card transaction"
 end
 
 end
