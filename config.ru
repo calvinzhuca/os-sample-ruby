@@ -5,10 +5,12 @@ Bundler.require(:default)
 class Application < Sinatra::Base
 
   get '/' do
-  "please use url /process to process credit card transaction"
-
     ENV.inspect
   end
+
+get '/process' do
+  puts "get method --Asked to process credit card transaction:"
+end
 
 end
 
