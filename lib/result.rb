@@ -10,14 +10,4 @@ def to_json(*a)
   }.to_json(*a)
 end
     
-
-#	public enum Status	{
-#	#		SUCCESS, FAILURE
-#	#	}
-#	#	private Status status;
-#	#	private String name;
-#	#	private Long orderNumber;
-#	#	private Date transactionDate;
-#	#	private Long transactionNumber;
-#
-#	end  
+end
