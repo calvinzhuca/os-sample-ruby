@@ -1,4 +1,7 @@
 require 'bundler/setup'
+require 'json'
+require_relative 'lib/result'
+require_relative 'lib/transcation'
 
 Bundler.require(:default)
 
