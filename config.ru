@@ -11,7 +11,7 @@ class Application < Sinatra::Base
     ENV.inspect
   end
 
-get '/process' do
+get '/billing/process' do
   "please use post method on url/process to handle credit card transaction"
 end
 
@@ -20,16 +20,16 @@ end
 
 
 
-get '/refund/:transactionNumber' do
+get '/billing/refund/:transactionNumber' do
 	"refund for '#{params[:transactionNumber]}'"
 end
 
-post '/refund' do
+post '/billing/refund' do
 	"refund for transcation number #{params[:id]}"
 end
 
 
-post '/process' do
+post '/billing/process' do
  begin
   post_data =  JSON.parse request.body.read
   if post_data.nil? or !post_data.has_key?('creditCardNumber')  or !post_data.has_key?('verificationCode')
