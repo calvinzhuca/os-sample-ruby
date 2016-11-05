@@ -5,9 +5,13 @@ class Result
 
 def to_json(*a)
   {
-    'json_class'   => self.class.name,
-    'data'         => [@status, @name, @orderNumber, @transactionDate, @transactionNumber]
+    	'status'   => @status,
+    	'name'         => @name, 
+	'orderNumber' => @orderNumber, 
+	'transactionDate' => @transactionDate, 
+	'transactionNumber' => @transactionNumber
   }.to_json(*a)
 end
+
     
 end
