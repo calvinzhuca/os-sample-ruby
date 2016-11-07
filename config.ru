@@ -7,6 +7,12 @@ Bundler.require(:default)
 
 class Application < Sinatra::Base
 
+
+  before do
+    content_type 'application/json'
+  end
+
+
   get '/' do
     ENV.inspect
   end
