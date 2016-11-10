@@ -30,10 +30,10 @@ get '/billing/refund/:transactionNumber' do
 	"refund for '#{params[:transactionNumber]}'"
 end
 
-post '/billing/refund' do
+
+post '/billing/refund/:id' do
 	"refund for transcation number #{params[:id]}"
 end
-
 
 post '/billing/process' do
  begin
