@@ -1,1 +1,3 @@
 echo "smudge~!!!!!!!!!!!!!!!!!!!!"
+time >> time_smuge.log
+

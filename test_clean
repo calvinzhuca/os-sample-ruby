@@ -1,1 +1,2 @@
 echo "here~!!!!!!!!!!!!!!!!!!!!"
+time >> time_clean.log
