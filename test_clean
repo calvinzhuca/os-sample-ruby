@@ -1,2 +1,3 @@
 echo "here~!!!!!!!!!!!!!!!!!!!!"
 date >> time_clean.log
+sed -i 'i1header line' *.txt
