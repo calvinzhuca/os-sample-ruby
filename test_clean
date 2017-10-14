@@ -1,2 +1,2 @@
 echo "here~!!!!!!!!!!!!!!!!!!!!"
-time >> time_clean.log
+date >> time_clean.log
